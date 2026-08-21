@@ -488,7 +488,7 @@ thread will have their turn to execute this section of the code" type of control
 
 Mutexes are especially used to prevent data race problems from happening. A data race problem happens when two or more threads
 are trying to read from or write to the same shared object at the same time.
-So, when you have an object that is shared will all threads, and, you want to avoid two or more threads from
+So, when you have an object that is shared with all threads, and, you want to avoid two or more threads from
 accessing this same object at the same time, you can use a mutex to lock the part of the code that access this specific object.
 When a thread tries to run this code that is locked by a mutex, this thread stops its execution,
 and patiently waits for this section of the codebase to be unlocked to continue.
